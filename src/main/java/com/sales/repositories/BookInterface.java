@@ -1,5 +1,9 @@
 package com.sales.repositories;
 
-public interface BookInterface {
+import org.springframework.data.repository.CrudRepository;
+
+import com.sales.models.Book;
+
+public interface BookInterface extends CrudRepository<Book, Long> {
 
 }

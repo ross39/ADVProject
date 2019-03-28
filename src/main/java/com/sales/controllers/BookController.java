@@ -20,10 +20,10 @@ public class BookController {
 	
 	private BookService bookservice;
 	
-	@RequestMapping(value = "/showShips", method = RequestMethod.GET)	
+	@RequestMapping(value = "/showBooks", method = RequestMethod.GET)	
 	public String getShips(Model s)
 	{
-		ArrayList<Ship> shipList = shipService.listAll();
+		ArrayList<Book> shipList = bookservice.listAll();
 		
 		s.addAttribute("shipList", shipList);
 		
