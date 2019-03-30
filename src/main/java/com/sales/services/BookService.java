@@ -19,9 +19,9 @@ public class BookService {
 		return (ArrayList<Book>) bookInterface.findAll();
 	}
 	
-	public Book addBook(Book ship) 
+	public Book addBook(Book book) 
 	{
-		return bookInterface.save(ship);
+		return bookInterface.save(book);
 	}
 
 }
